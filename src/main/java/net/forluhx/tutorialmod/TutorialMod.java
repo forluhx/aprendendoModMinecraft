@@ -1,6 +1,7 @@
 package net.forluhx.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.forluhx.tutorialmod.Item.ModCreativeModeTabs;
 import net.forluhx.tutorialmod.Item.ModItems;
 import net.forluhx.tutorialmod.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,8 @@ public class TutorialMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
