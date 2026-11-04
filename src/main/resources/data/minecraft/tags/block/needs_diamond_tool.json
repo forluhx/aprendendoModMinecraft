@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:alexandrite_deepslate_ore"
+    "tutorialmod:alexandrite_deepslate_ore",
+    "tutorialmod:magic_block"
   ]
 }

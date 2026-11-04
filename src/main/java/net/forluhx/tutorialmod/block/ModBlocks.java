@@ -2,6 +2,7 @@ package net.forluhx.tutorialmod.block;
 
 import net.forluhx.tutorialmod.Item.ModItems;
 import net.forluhx.tutorialmod.TutorialMod;
+import net.forluhx.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -35,6 +36,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_DEEPSLATE_ORE = registerBlock("alexandrite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 5), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_BRICKS)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock( "magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 
