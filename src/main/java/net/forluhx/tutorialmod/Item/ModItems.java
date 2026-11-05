@@ -1,6 +1,7 @@
 package net.forluhx.tutorialmod.Item;
 
 import net.forluhx.tutorialmod.Item.custom.ChiselItem;
+import net.forluhx.tutorialmod.Item.custom.FuelItem;
 import net.forluhx.tutorialmod.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem((new Item.Properties().durability(32))));
+
+    public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
+
+    public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
+            () -> new FuelItem(new Item.Properties(), 20000));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

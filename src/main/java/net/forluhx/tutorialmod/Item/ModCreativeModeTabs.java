@@ -19,10 +19,18 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
                     .title(Component.translatable("creativetab.tutorialmod.alexandrite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //ores
                         output.accept(ModItems.ALEXANDRITE.get());
                         output.accept(ModItems.RAW_ALEXANDRITE.get());
 
+                        //tools
                         output.accept((ModItems.CHISEL.get()));
+
+                        //food
+                        output.accept((ModItems.KOHLRABI.get()));
+
+                        //fuel
+                        output.accept((ModItems.AURORA_ASHES.get()));
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("alexandrite_blocks_tab",
