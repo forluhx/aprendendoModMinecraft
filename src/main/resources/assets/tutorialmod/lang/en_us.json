@@ -12,5 +12,10 @@
   "block.tutorialmod.magic_block": "Magic Block",
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
-  "creativetab.tutorialmod.alexandite_block": "Alexandrite Blocks"
+  "creativetab.tutorialmod.alexandite_block": "Alexandrite Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This block turn things into §9another§r",
+  "tooltip.tutorialmod.chisel": "Press §eshift§r for more information",
+  "tooltip.tutorialmod.chisel.shift_down": "If you right click certain blocks, they will turn into another",
+  "tooltip.tutorialmod.kohlrabi": "A good food"
 }
